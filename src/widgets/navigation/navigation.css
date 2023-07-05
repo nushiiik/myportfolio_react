@@ -1,0 +1,7 @@
+@import "../../styles/variables.css";
+
+.navigation {
+    width: 108px;
+    min-height: 305px;
+    background-color: var(--color-white);
+}

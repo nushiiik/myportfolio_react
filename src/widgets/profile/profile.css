@@ -1,0 +1,7 @@
+@import "../../styles/variables.css";
+
+.profile {
+    width: 305px;
+    min-height: 305px;
+    background-color: var(--color-white);
+}
