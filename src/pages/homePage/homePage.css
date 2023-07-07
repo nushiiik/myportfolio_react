@@ -4,8 +4,9 @@
     width: 1440px;
     min-height: 100vh;
     display: flex;
+    justify-content: center;
     margin: 0 auto;
-    background-color: var(--color-gray);
+    background-color: var(--color-gray-light);
 }
 .inner {
     width: 970px;

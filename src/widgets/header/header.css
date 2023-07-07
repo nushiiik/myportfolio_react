@@ -2,6 +2,110 @@
 
 .header {
     width: 100%;
-    min-height: 467px;
+    height: 467px;
     background-color: var(--color-white);
+    position: relative;
+    padding: 93px 60px 74px;
+}
+h1 {
+    width: 60%;
+    font-size: 48px;
+    font-weight: bold;
+    color: var(--color-black);
+    margin-bottom: 18px;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+}
+h1 span {
+    color: var(--color-orange);
+}
+.about {
+    width: 50%;
+    color: var(--color-dark-gray);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 50px;
+}
+
+.header img {
+    position: absolute;
+    bottom: 0;
+    right: 60px;
+}
+
+.element {
+    width: 16px;
+    height: 16px;
+    opacity: .8;
+    position: absolute;
+}
+.circle {
+    border-radius: 50%;
+}
+
+.square {
+    transform: rotate(25deg);
+}
+
+.triangle {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 16px solid #FF2E00;
+    opacity: .8;
+    position: absolute;
+}
+.triangle:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -4px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 8px solid #FFFFFF;
+}
+
+.color-yellow {
+    border: 2px solid var(--color-orange);
+}
+
+.color-green {
+    border: 2px solid #05FF00;
+}
+
+.color-blue {
+    border: 2px solid #0047FF;
+}
+
+.position-1 {
+    top: 30px;
+    left: 40px;
+}
+
+.position-2 {
+    bottom: 70px;
+    left: 500px;
+}
+
+.position-3 {
+    bottom: 30px;
+    left: 90px;
+}
+
+.position-4 {
+    top: 50px;
+    left: 520px;
+}
+
+.position-5 {
+    bottom: 120px;
+    left: 360px;
+}
+
+.position-6 {
+    top: 70px;
+    right: 50px;
+}
+
+.position-7 {
+    bottom: 25px;
+    right: 35px;
 }

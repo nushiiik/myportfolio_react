@@ -1,0 +1,18 @@
+@import "../../styles/variables.css";
+
+
+.button {
+    padding: 16px 32px;
+    font-size: 16px;
+    background-color: var(--color-orange);
+    border-radius: 5px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+    transition: color .3s, font-size .3s, font-weight .3s;
+}
+
+.button:hover {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-white);
+}
