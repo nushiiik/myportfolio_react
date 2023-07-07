@@ -1,13 +1,13 @@
 import React from "react";
-import './homePage.css';
 import {Header} from "../../widgets/header/header";
 import {Profile} from "../../widgets/profile/profile";
-import {Navigation} from "../../widgets/navigation/navigation";
-import {Education} from "../../widgets/education/education";
+import {RightPanel} from "../../widgets/rightPanel/rightPanel";
 import {Experience} from "../../widgets/experience/experience";
 import {Portfolio} from "../../widgets/portfolio/portfolio";
 import {Footer} from "../../widgets/footer/footer";
-import {Information} from "../../widgets/information/information";
+import {Contacts} from "../../widgets/contacts/contacts";
+
+import './homePage.css';
 
 export const HomePage = () => {
   return (
@@ -15,13 +15,13 @@ export const HomePage = () => {
         <Profile />
         <div className="inner">
             <Header />
-            <Education />
-            <Experience />
+            <Experience name="education" />
+            <Experience name="work" />
             <Portfolio />
-            <Information />
+            <Contacts />
             <Footer />
         </div>
-        <Navigation />
+        <RightPanel />
     </div>
   );
 }

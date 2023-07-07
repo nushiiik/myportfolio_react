@@ -1,8 +1,10 @@
 import React from "react";
+import { Element } from "react-scroll";
+
 import './experience.css';
 
-export const Experience = () => {
+export const Experience = ({name}) => {
     return (
-        <div className='experience'>Experience</div>
+        <Element name = {name} className='experience'>Experience</Element>
     );
 }

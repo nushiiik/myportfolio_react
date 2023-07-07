@@ -2,6 +2,6 @@
 
 .profile {
     width: 305px;
-    min-height: 305px;
+    min-height: 100vh;
     background-color: var(--color-white);
 }

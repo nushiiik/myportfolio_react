@@ -1,0 +1,31 @@
+@import "../../styles/variables.css";
+
+.navigation {
+    position: fixed;
+    margin-top: 220px;
+    padding: 34px;
+}
+
+.navigation ul {
+    display: grid;
+    grid-auto-flow: row;
+    grid-gap: 43px;
+}
+
+.item {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--color-gray);
+}
+
+.item img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.item:hover {
+    background-color: var(--color-orange);
+}
