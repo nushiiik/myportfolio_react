@@ -1,6 +1,6 @@
 import React from "react";
-import { Element } from "react-scroll";
 import './portfolio.css';
+import { Element } from "react-scroll";
 
 export const Portfolio = () => {
     return (

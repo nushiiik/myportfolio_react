@@ -1,7 +1,13 @@
 @import "../../styles/variables.css";
 
-.experience {
+.mainInfo {
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     background-color: var(--color-white);
+    padding: 40px;
+}
+
+.titleInfo {
+    width: 438px;
+    margin: 0 auto 50px;
 }

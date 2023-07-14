@@ -1,0 +1,10 @@
+@import "../../styles/variables.css";
+
+.subtitle {
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    margin-bottom: 25px;
+}

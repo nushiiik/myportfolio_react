@@ -2,17 +2,44 @@
 
 
 .button {
-    padding: 16px 32px;
     font-size: 16px;
+    padding: 16px 57px 16px 32px;
+    position: relative;
     background-color: var(--color-orange);
     border-radius: 5px;
     text-transform: uppercase;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-    transition: color .3s, font-size .3s, font-weight .3s;
+    transition: .3s;
+}
+
+.button::after {
+    content: '';
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background: url("./images/arrow_black.svg") no-repeat;
+    margin-left: 9px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .3s;
 }
 
 .button:hover {
     font-size: 24px;
+    line-height: 32px;
     font-weight: bold;
     color: var(--color-white);
+}
+
+.button:hover::after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    background: url("./images/arrow_white.svg") no-repeat;
+    margin-left: 9px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }

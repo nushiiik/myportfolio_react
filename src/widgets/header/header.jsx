@@ -1,8 +1,9 @@
 import React from "react";
+import './header.css';
 import { Element } from "react-scroll";
 import PhotoPicture from "./images/photopicture.png";
 import {Button} from "../../features/button/button";
-import './header.css';
+
 
 export const Header = () => {
     return (

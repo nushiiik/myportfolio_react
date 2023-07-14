@@ -1,7 +1,6 @@
 import React from "react";
-import {Navigation} from "../../features/navigation/navigation";
-
 import './rightPanel.css';
+import {Navigation} from "../../features/navigation/navigation";
 
 export const RightPanel = () => {
     return (

@@ -1,0 +1,32 @@
+@import "../../styles/variables.css";
+
+.experienceCard {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.experienceCard:last-child {
+    margin-bottom: 0;
+}
+.addInfo {
+
+}
+.descriptionInfo {
+    max-width: 520px;
+}
+.grade {
+    display: inline-block;
+    color: var(--color-black);
+    text-transform: capitalize;
+    margin-right: 20px;
+}
+.date {
+    display: inline-block;
+    color: var(--color-white);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 100.9%;
+    background: var(--color-orange);
+    padding: 4px 7px;
+    border-radius: 1px;
+}

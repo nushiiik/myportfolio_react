@@ -1,11 +1,10 @@
 import React from "react";
-import { Link } from "react-scroll";
-import HomeIcon from "./images/home.svg";
-import EducationIcon from "./images/education.svg";
-import PortfolioIcon from "./images/portfolio.svg";
-import ContactsIcon from "./images/contacts.svg";
-
 import './navigation.css';
+import { Link } from "react-scroll";
+import {IconContacts} from "./icons/iconContacts";
+import {IconEducation} from "./icons/iconEducation";
+import {IconHome} from "./icons/iconHome";
+import {IconPortfolio} from "./icons/iconPortfolio";
 
 export const Navigation = () => {
     return (
@@ -13,22 +12,22 @@ export const Navigation = () => {
             <ul>
                 <li className='item'>
                     <Link activeClass="active" to="home" smooth={true} duration={500}>
-                        <img src={HomeIcon} alt="HomeIcon" />
+                        <IconHome />
                     </Link>
                 </li>
                 <li className='item'>
                     <Link activeClass="active" to="education" smooth={true} duration={500}>
-                        <img src={EducationIcon} alt="EducationIcon" />
+                        <IconEducation />
                     </Link>
                 </li>
                 <li className='item'>
                     <Link activeClass="active" to="portfolio" smooth={true} duration={500}>
-                        <img src={PortfolioIcon} alt="PortfolioIcon" />
+                        <IconPortfolio />
                     </Link>
                 </li>
-                <li className='item'>
+                <li className='item itemContacts'>
                     <Link activeClass="active" to="contacts" smooth={true} duration={500}>
-                        <img src={ContactsIcon} alt="ContactsIcon" />
+                        <IconContacts />
                     </Link>
                 </li>
             </ul>

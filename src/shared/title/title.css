@@ -1,0 +1,11 @@
+@import "../../styles/variables.css";
+
+.title {
+    color: var(--color-black);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    text-align: center;
+    margin-bottom: 25px;
+}
