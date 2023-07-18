@@ -3,6 +3,6 @@ import './button.css';
 
 export const Button = () => {
     return (
-        <button className='button'>hire me</button>
+        <button type="submit" className="button">Send message</button>
     );
 }

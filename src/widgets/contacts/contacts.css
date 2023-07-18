@@ -1,7 +1,14 @@
 @import "../../styles/variables.css";
 
 .contacts {
+    display: flex;
+    justify-content: space-around;
+}
+.formInfo {
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     background-color: var(--color-white);
+    padding: 25px;
+}
+.contactInfo {
 }

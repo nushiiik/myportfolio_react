@@ -2,7 +2,7 @@ import React from "react";
 import './header.css';
 import { Element } from "react-scroll";
 import PhotoPicture from "./images/photopicture.png";
-import {Button} from "../../features/button/button";
+import {ButtonHire} from "../../features/buttonHire/buttonHire";
 
 
 export const Header = () => {
@@ -11,7 +11,7 @@ export const Header = () => {
             <h1>I’m Anna Lebedeva <span>Front-end</span> Developer</h1>
             <div className='about'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque
                 rutrum semper sed suspendisse nunc lectus.</div>
-            <Button />
+            <ButtonHire />
             <img src={PhotoPicture} alt='PhotoPicture'/>
             <div className='element circle color-yellow position-1'></div>
             <div className='element circle color-yellow position-2'></div>

@@ -1,0 +1,27 @@
+@import "../../styles/variables.css";
+
+input, label, button {
+    display: block;
+}
+
+label {
+    color: var(--color-dark-gray);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+input, textarea {
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    background-color: var(--color-gray-light);
+    padding: 12px;
+    margin-bottom: 25px;
+}
+textarea {
+    height: 210px;
+    resize: none;
+}
