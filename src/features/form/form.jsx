@@ -10,6 +10,12 @@ export const Form = () => {
         subject: {value: ''}
     });
 
+    const [formErrorState, setFormErrorState] = useState({
+        name: {error: false},
+        email: {error: false},
+        subject: {error: false}
+    });
+
     const handleChange = (event) => {
         const { name, value } = event.target;
         setFormState({...formState, [name]: {value: value}});
@@ -17,17 +23,39 @@ export const Form = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
+
+        let error = 0;
+        let updatedFormErrorState = {};
+
         for (const [key, value] of Object.entries(formState)) {
-            console.log(key, value.value);
+            if (!isValidValue({name: key, value: value.value})) {
+                updatedFormErrorState[key] = {error: true};
+                error++;
+            } else {
+                updatedFormErrorState[key] = {error: false};
+            }
+        }
+        setFormErrorState(updatedFormErrorState);
+        console.log(error > 0 ? "ERROR" : "SUCCESS");
+    };
+
+    const isValidValue = (value) => {
+        switch (value.name) {
+            case "name":
+                return /^[a-zA-Z]{2,}$/.test(value.value);
+            case "email":
+                return /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-z0-9-.]+$/.test(value.value);
+            default:
+                return true;
         }
     };
 
     return (
         <form onSubmit={handleSubmit}>
             <label>Your full name</label>
-            <input type="text" name="name" value={formState.name.value} onChange={handleChange} />
+            <input type="text" name="name" value={formState.name.value} onChange={handleChange} className={formErrorState.name.error ? "errorInput" : ""} />
             <label>Your e-mail</label>
-            <input type="text" name="email" value={formState.email.value} onChange={handleChange} />
+            <input type="text" name="email" value={formState.email.value} onChange={handleChange} className={formErrorState.email.error ? "errorInput" : ""} />
             <label>Subject</label>
             <input type="text" name="subject" value={formState.subject.value} onChange={handleChange} />
             <label>Your message</label>

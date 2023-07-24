@@ -3,7 +3,7 @@ import './experience.css';
 import { Element } from "react-scroll";
 import {Title} from "../../shared/title/title";
 import {Paragraph} from "../../shared/paragraph/paragraph";
-import {ExperienceCard} from "../experienceCard/experienceCard";
+import {ExperienceCard} from "../../shared/experienceCard/experienceCard";
 
 export const Experience = ({name, data}) => {
     const mainInfo = data.history.map((experience, index) => <ExperienceCard data={experience} key={`experience_${index}`} />);

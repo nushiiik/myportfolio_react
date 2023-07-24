@@ -1,0 +1,17 @@
+@import "../../../styles/variables.css";
+
+.contentCard {
+    color: var(--color-dark-gray);
+    margin-bottom: 15px;
+}
+.property {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+
+}
+.meaning {
+    float: right;
+    text-align: right;
+}

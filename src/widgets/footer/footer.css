@@ -1,7 +1,12 @@
 @import "../../styles/variables.css";
 
 .footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 60px;
     background-color: var(--color-white);
+    color: var(--color-black);
+    text-transform: capitalize;
 }

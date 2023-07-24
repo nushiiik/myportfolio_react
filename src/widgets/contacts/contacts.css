@@ -1,8 +1,18 @@
 @import "../../styles/variables.css";
 
 .contacts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 570px 370px;
+    column-gap: 30px;
+}
+.wrapper {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    gap: 50px;
+}
+.titleInfoContacts {
+    width: 100%;
 }
 .formInfo {
     width: 100%;
@@ -10,5 +20,11 @@
     background-color: var(--color-white);
     padding: 25px;
 }
-.contactInfo {
+.contactsInfo {
+    width: 100%;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
 }

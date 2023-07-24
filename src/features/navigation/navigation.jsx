@@ -25,7 +25,7 @@ export const Navigation = () => {
                         <IconPortfolio />
                     </Link>
                 </li>
-                <li className='item itemContacts'>
+                <li className='item'>
                     <Link activeClass="active" to="contacts" smooth={true} duration={500}>
                         <IconContacts />
                     </Link>
