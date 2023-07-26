@@ -1,0 +1,23 @@
+@import "../../styles/variables.css";
+
+.portfolioTabs {
+    display: flex;
+    gap: 37px;
+    margin: 50px 0;
+    justify-content: center;
+}
+
+.portfolioTab {
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    color: var(--color-black);
+    text-transform: capitalize;
+    transition: all .3s;
+}
+
+.portfolioTab:hover {
+    color: var(--color-orange);
+}
+

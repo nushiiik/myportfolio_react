@@ -22,9 +22,9 @@ export const Contacts = () => {
                     <Title title="Contact information" />
                 </div>
                 <div className="contactsInfo">
-                    <ContactsCard data={LOCATION} icon="location"/>
-                    <ContactsCard data={EMAIL} icon="email"/>
-                    <ContactsCard data={MOBILE} icon="mobile"/>
+                    <ContactsCard data={LOCATION}/>
+                    <ContactsCard data={EMAIL}/>
+                    <ContactsCard data={MOBILE}/>
                 </div>
             </div>
         </Element>

@@ -3,9 +3,13 @@
 .experienceCard {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1.5px solid #FAFAFA;
+    margin-bottom: 20px;
 }
 .experienceCard:last-child {
+    padding-bottom: 0;
+    border-bottom: none;
     margin-bottom: 0;
 }
 .addInfo {

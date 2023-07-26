@@ -3,5 +3,11 @@
 .portfolio {
     width: 100%;
     min-height: 700px;
-    background-color: var(--color-white);
+}
+
+.portfolioWrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
 }
