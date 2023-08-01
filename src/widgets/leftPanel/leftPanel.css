@@ -1,0 +1,79 @@
+@import "../../styles/variables.css";
+
+.leftPanel {
+    width: 305px;
+    min-height: 100vh;
+    background-color: var(--color-white);
+    padding: 45px;
+}
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1.5px solid #F0F0F6;
+    margin-bottom: 25px;
+}
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: var(--color-gray-light);
+    background-image: url("../header/images/photopicture.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 15px;
+}
+.avatar::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #7EB942;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.15));
+    position: absolute;
+    bottom: 10px;
+    right: 18px;
+}
+.sectionTitle {
+    color: var(--color-black);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%; /* 22.248px */
+    text-transform: capitalize;
+}
+.sectionSubtitle {
+    color: var(--color-dark-gray);
+    text-transform: capitalize;
+}
+.socialsIcons {
+    display: flex;
+    gap: 15px;
+}
+.socialsIcon {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: var(--color-orange);
+    position: relative;
+}
+.socialsIcon a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+.socialsIcon svg {
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+

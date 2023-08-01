@@ -11,10 +11,25 @@
     border-radius: 50%;
     margin: 0 auto 30px;
 }
-.iconCard svg {
+.iconCard img {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
+.contentCard {
+    color: var(--color-dark-gray);
+    margin-bottom: 15px;
+}
+.property {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+
+}
+.meaning {
+    float: right;
+    text-align: right;
+}

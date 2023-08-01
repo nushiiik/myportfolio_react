@@ -1,18 +1,23 @@
 import React from "react";
 import './contactsCard.css';
-import {ContentCard} from "./contentCard/contentCard";
-import {IconMail} from "./icons/iconMail";
 
-export const ContactsCard = ({data, icon}) => {
-    const contentInfo = data.description.map((contacts, index) => <ContentCard data={contacts} key={`contacts_${index}`} />);
+export const ContactsCard = ({data}) => {
+    const renderContentCard = () => {
+        return data.description.map((data) => (
+            <div className="contentCard">
+                <span className="property">{data.property}</span>
+                <span className="meaning">{data.meaning}</span>
+            </div>
+        ));
+    };
 
     return (
         <div className="contactsCard">
             <div className="iconCard">
-                <IconMail />
+                <img src={data.icon} alt={data.icon} />
             </div>
             <div className="contentCard">
-                {contentInfo}
+                {renderContentCard(data)}
             </div>
         </div>
     );

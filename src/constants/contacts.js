@@ -1,4 +1,9 @@
+import iconLocation from "./icons/location.svg"
+import iconEmail from "./icons/mail.svg"
+import iconMobile from "./icons/mobile.svg"
+
 export const LOCATION = {
+    icon: iconLocation,
     description: [
         {
             property: "Country:",
@@ -16,6 +21,7 @@ export const LOCATION = {
 };
 
 export const EMAIL = {
+    icon: iconEmail,
     description: [
         {
             property: "Email:",
@@ -33,6 +39,7 @@ export const EMAIL = {
 };
 
 export const MOBILE = {
+    icon: iconMobile,
     description: [
         {
             property: "Support services:",

@@ -8,7 +8,7 @@
     border-radius: 5px;
     text-transform: uppercase;
     box-shadow: 0 4px 4px rgba(0, 0, 0, .25);
-    transition: .3s;
+    transition: all .3s;
 }
 
 .buttonHire::after {

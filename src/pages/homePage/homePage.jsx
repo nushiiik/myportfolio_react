@@ -1,7 +1,7 @@
 import React from "react";
 import './homePage.css';
 import {Header} from "../../widgets/header/header";
-import {Profile} from "../../widgets/profile/profile";
+import {LeftPanel} from "../../widgets/leftPanel/leftPanel";
 import {RightPanel} from "../../widgets/rightPanel/rightPanel";
 import {Experience} from "../../widgets/experience/experience";
 import {Portfolio} from "../../widgets/portfolio/portfolio";
@@ -12,7 +12,7 @@ import {EDUCATION, WORK} from "../../constants/experience";
 export const HomePage = () => {
   return (
     <div className="container">
-        <Profile />
+        <LeftPanel />
         <div className="inner">
             <Header />
             <Experience name="education" data={EDUCATION}/>
