@@ -7,13 +7,15 @@ export const Form = () => {
     const [formState, setFormState] = useState({
         name: {value: ''},
         email: {value: ''},
-        subject: {value: ''}
+        subject: {value: ''},
+        message: {value: ''}
     });
 
     const [formErrorState, setFormErrorState] = useState({
         name: {error: false},
         email: {error: false},
-        subject: {error: false}
+        subject: {error: false},
+        message: {error: false}
     });
 
     const handleChange = (event) => {
@@ -33,6 +35,14 @@ export const Form = () => {
                 error++;
             } else {
                 updatedFormErrorState[key] = {error: false};
+            }
+            if (error === 0) {
+                setFormState ({
+                    name: {value: ''},
+                    email: {value: ''},
+                    subject: {value: ''},
+                    message: {value: ''}
+                });
             }
         }
         setFormErrorState(updatedFormErrorState);
@@ -59,7 +69,7 @@ export const Form = () => {
             <label>Subject</label>
             <input type="text" name="subject" value={formState.subject.value} onChange={handleChange} />
             <label>Your message</label>
-            <textarea />
+            <textarea name="message" value={formState.message.value} onChange={handleChange}/>
             <Button />
         </form>
     );
