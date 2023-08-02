@@ -17,6 +17,7 @@
     height: 40px;
     border-radius: 50%;
     background-color: var(--color-gray);
+    transition: all .3s;
 }
 
 .item a {

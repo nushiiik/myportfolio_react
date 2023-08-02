@@ -1,6 +1,6 @@
 @import "../../styles/variables.css";
 
-.button {
+.buttonSend {
     font-size: 14px;
     font-weight: 600;
     padding: 10px 25px;
@@ -10,6 +10,6 @@
     transition: .3s;
 }
 
-.button:hover {
+.buttonSend:hover {
     color: var(--color-white);
 }

@@ -17,7 +17,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
 .contentCard {
     color: var(--color-dark-gray);
     margin-bottom: 15px;
@@ -27,7 +26,6 @@
     font-weight: 500;
     line-height: 123.6%;
     text-transform: capitalize;
-
 }
 .meaning {
     float: right;

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './form.css';
-import {Button} from "../button/button";
+import {ButtonSend} from "../buttonSend/buttonSend";
 
 export const Form = () => {
 
@@ -70,7 +70,7 @@ export const Form = () => {
             <input type="text" name="subject" value={formState.subject.value} onChange={handleChange} />
             <label>Your message</label>
             <textarea name="message" value={formState.message.value} onChange={handleChange}/>
-            <Button />
+            <ButtonSend />
         </form>
     );
 }

@@ -1,0 +1,40 @@
+@import "../../styles/variables.css";
+
+.buttonDownload {
+    display: block;
+    color: var(--color-black);
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 70px 10px 45px;
+    position: relative;
+    background-color: var(--color-orange);
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.buttonDownload::after {
+    content: '';
+    width: 14px;
+    height: 16px;
+    display: inline-block;
+    background: url("./images/download-black.svg") no-repeat;
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s;
+}
+.buttonDownload:hover {
+    color: var(--color-white);
+}
+
+.buttonDownload:hover::after {
+    content: '';
+    width: 14px;
+    height: 16px;
+    display: inline-block;
+    background: url("./images/download-white.svg") no-repeat;
+    margin-left: 20px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}

@@ -16,12 +16,12 @@
     width: 16px;
     height: 16px;
     display: inline-block;
-    background: url("./images/arrow_black.svg") no-repeat;
+    background: url("images/arrow-black.svg") no-repeat;
     margin-left: 9px;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    transition: .3s;
+    transition: all .3s;
 }
 
 .buttonHire:hover {
@@ -36,7 +36,7 @@
     width: 32px;
     height: 32px;
     display: inline-block;
-    background: url("./images/arrow_white.svg") no-repeat;
+    background: url("images/arrow-white.svg") no-repeat;
     margin-left: 9px;
     position: absolute;
     top: 50%;

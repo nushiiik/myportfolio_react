@@ -1,0 +1,9 @@
+@import "../../styles/variables.css";
+
+.skillsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: var(--color-dark-gray);
+    text-transform: capitalize;
+}
