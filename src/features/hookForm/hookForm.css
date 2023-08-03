@@ -1,0 +1,31 @@
+@import "../../styles/variables.css";
+
+.hookForm input, label, button {
+    display: block;
+}
+
+.hookForm label {
+    color: var(--color-dark-gray);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    text-transform: capitalize;
+    margin-bottom: 8px;
+}
+.hookForm input, textarea {
+    width: 100%;
+    border: 1px solid transparent;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 123.6%;
+    background-color: var(--color-gray-light);
+    padding: 12px;
+    margin-bottom: 25px;
+}
+.hookForm textarea {
+    height: 210px;
+    resize: none;
+}
+.hookForm .errorInput {
+    border: 1px solid red;
+}

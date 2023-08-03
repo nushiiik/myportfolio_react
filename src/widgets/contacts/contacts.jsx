@@ -1,10 +1,10 @@
 import React from "react";
 import './contacts.css';
 import { Element } from "react-scroll";
-import {Form} from "../../features/form/form";
 import {Title} from "../../shared/title/title";
 import {ContactsCard} from "../../shared/contactsCard/contactsCard";
 import {EMAIL, LOCATION, MOBILE} from "../../constants/contacts";
+import {HookForm} from "../../features/hookForm/hookForm";
 
 export const Contacts = () => {
     return (
@@ -14,7 +14,7 @@ export const Contacts = () => {
                     <Title title="Leave us your info" />
                 </div>
                 <div className="formInfo">
-                    <Form />
+                    <HookForm />
                 </div>
             </div>
             <div className="wrapper">
