@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import './form.css';
 import {ButtonSend} from "../buttonSend/buttonSend";
+import {sendForm} from "../../processes/sendForm";
 
 export const Form = () => {
 
@@ -46,7 +47,8 @@ export const Form = () => {
             }
         }
         setFormErrorState(updatedFormErrorState);
-        console.log(error > 0 ? "ERROR" : "SUCCESS");
+
+        error < 1 ? sendForm(formState) : console.log("Ошибка валидации");
     };
 
     const isValidValue = (value) => {

@@ -16,9 +16,7 @@ export const ContactsCard = ({data}) => {
             <div className="iconCard">
                 <img src={data.icon} alt={data.icon} />
             </div>
-            <div className="contentCard">
-                {renderContentCard(data)}
-            </div>
+            {renderContentCard(data)}
         </div>
     );
 }

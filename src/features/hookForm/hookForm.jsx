@@ -2,10 +2,11 @@ import { useForm } from "react-hook-form"
 import React from "react";
 import './hookForm.css';
 import {ButtonSend} from "../buttonSend/buttonSend";
+import {sendHookForm} from "../../processes/sendForm";
 
 export const HookForm = () => {
     const { register, handleSubmit, formState: {errors}, } = useForm();
-    const onSubmit = (data) => console.log(data);
+    const onSubmit = (data) => sendHookForm(data);
 
     return (
         <form className='hookForm' onSubmit={handleSubmit(onSubmit)}>
