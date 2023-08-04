@@ -16,3 +16,11 @@
     gap: 70px;
 }
 
+.container_dark {
+    background-color: var(--color-black);
+}
+
+.container_light {
+    background-color: var(--color-gray-light);
+}
+

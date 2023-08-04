@@ -8,10 +8,12 @@ import {Portfolio} from "../../widgets/portfolio/portfolio";
 import {Footer} from "../../widgets/footer/footer";
 import {Contacts} from "../../widgets/contacts/contacts";
 import {getEducation, getWork} from "../../processes/getExperienceData";
+import {useTheme} from "../../processes/contextTheme";
 
 export const HomePage = () => {
     const [education, setEducation] = useState([]);
     const [loading, setLoading] = useState(true);
+    const {theme} = useTheme();
 
     useEffect(() => {
         const getData = async () => {
@@ -44,7 +46,7 @@ export const HomePage = () => {
     }, []);
 
     return (
-    <div className="container">
+    <div className={`container container_${theme}`}>
         <LeftPanel />
         <div className="inner">
             <Header />
