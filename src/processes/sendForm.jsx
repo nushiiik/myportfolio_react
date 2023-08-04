@@ -3,9 +3,9 @@ import axios from "axios";
 export const sendForm = async (data) => {
     try {
         await axios.post("http://localhost:3002/api/send-email", data);
-        console.log("Успешной отправка с клиента");
+        console.log("Успешная отправка с клиента");
     } catch (error) {
-        console.log("ошибка при отправке с клиента: ", error);
+        console.log("Ошибка при отправке с клиента: ", error);
     }
 };
 
@@ -19,8 +19,8 @@ export const sendHookForm = async (data) => {
             subject: { value: subject },
             message: { value: message },
         });
-        console.log("Успешной отправка с клиента");
+        console.log("Успешная отправка с клиента");
     } catch (error) {
-        console.log("ошибка при отправке с клиента: ", error);
+        console.log("Ошибка при отправке с клиента: ", error);
     }
 };

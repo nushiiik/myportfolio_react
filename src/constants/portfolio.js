@@ -13,17 +13,17 @@ export const CATEGORIES = ["All categories", "UI Design", "Web Templates", "Logo
 export const PORTFOLIO = [
     {
         img: imageOne,
-        link:"/",
+        link:"/another-page",
         category: CATEGORIES[1]
     },
     {
         img: imageTwo,
-        link:"/",
+        link:"https://nushiiik.github.io/beats_project/",
         category: CATEGORIES[4]
     },
     {
         img: imageThree,
-        link:"/",
+        link:"https://nushiiik.github.io/MinimoBootstrap/",
         category: CATEGORIES[3]
     },
     {
