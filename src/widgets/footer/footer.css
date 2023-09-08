@@ -6,7 +6,14 @@
     align-items: center;
     width: 100%;
     min-height: 60px;
-    background-color: var(--color-white);
     color: var(--color-black);
     text-transform: capitalize;
+}
+
+.footer_light {
+    background-color: var(--color-white);
+}
+
+.footer_dark {
+    background-color: var(--color-gray-theme);
 }

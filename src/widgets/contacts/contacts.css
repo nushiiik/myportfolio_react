@@ -6,20 +6,31 @@
     grid-template-columns: 570px 370px;
     column-gap: 30px;
 }
+
 .wrapper {
     display: flex;
     flex-direction: column;
     gap: 50px;
 }
+
 .titleInfoContacts {
     width: 100%;
 }
+
 .formInfo {
     width: 100%;
     min-height: 500px;
-    background-color: var(--color-white);
     padding: 25px;
 }
+
+.formInfo_light {
+    background-color: var(--color-white);
+}
+
+.formInfo_dark {
+    background-color: var(--color-gray-theme);
+}
+
 .contactsInfo {
     width: 100%;
     min-height: 500px;

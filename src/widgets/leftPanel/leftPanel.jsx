@@ -10,10 +10,13 @@ import {IconSkill} from "./icons/iconSkill";
 import {SkillsContainer} from "../../shared/skillsContainer/skillsContainer";
 import {LANGUAGES, SKILLS} from "../../constants/skills";
 import {ButtonDownload} from "../../features/buttonDownload/buttonDownload";
+import {useTheme} from "../../processes/contextTheme";
 
 export const LeftPanel = () => {
+    const {theme} = useTheme();
+
     return (
-        <div className='leftPanel'>
+        <div className={`leftPanel leftPanel_${theme}`}>
             <div className='section'>
                 <div className='avatar'>
                 </div>
@@ -23,12 +26,12 @@ export const LeftPanel = () => {
                 </div>
                 <ul className='socialsIcons'>
                     <li className='socialsIcon'>
-                        <a href='/' className='socialIconLink' target="_blank" rel="noreferrer">
+                        <a href='https://www.linkedin.com/in/lebedeva-ann/' className='socialIconLink' target="_blank" rel="noreferrer">
                             <IconLinkedin />
                         </a>
                     </li>
                     <li className='socialsIcon'>
-                        <a href='/' className='socialIconLink' target="_blank" rel="noreferrer">
+                        <a href='https://t.me/nushiiik' className='socialIconLink' target="_blank" rel="noreferrer">
                             <IconTelegram />
                         </a>
                     </li>
@@ -38,7 +41,7 @@ export const LeftPanel = () => {
                         </a>
                     </li>
                     <li className='socialsIcon'>
-                        <a href='/' className='socialIconLink' target="_blank" rel="noreferrer">
+                        <a href='https://www.instagram.com/le_nushiiik/' className='socialIconLink' target="_blank" rel="noreferrer">
                             <IconInstagram />
                         </a>
                     </li>
@@ -58,11 +61,11 @@ export const LeftPanel = () => {
                 <ul className='characteristics'>
                     <li className='characteristic'>
                         <span className='characteristicTitle'>Age:</span>
-                        <span className='characteristicValue'>24</span>
+                        <span className='characteristicValue'>30</span>
                     </li>
                     <li className='characteristic'>
                         <span className='characteristicTitle'>Residence:</span>
-                        <span className='characteristicValue'>BD</span>
+                        <span className='characteristicValue'>RUS</span>
                     </li>
                     <li className='characteristic'>
                         <span className='characteristicTitle'>Freelance:</span>
@@ -70,7 +73,7 @@ export const LeftPanel = () => {
                     </li>
                     <li className='characteristic'>
                         <span className='characteristicTitle'>Address:</span>
-                        <span className='characteristicValue'>Dhaka, Bangladesh</span>
+                        <span className='characteristicValue'>Moscow, Russia</span>
                     </li>
                 </ul>
             </div>
@@ -87,19 +90,23 @@ export const LeftPanel = () => {
                 <ul className='extraSkills'>
                     <li className='extraSkill'>
                         <IconSkill />
+                        SCSS, Sass
+                    </li>
+                    <li className='extraSkill'>
+                        <IconSkill />
+                        GIT
+                    </li>
+                    <li className='extraSkill'>
+                        <IconSkill />
+                        Gulp, Webpack, Vite
+                    </li>
+                    <li className='extraSkill'>
+                        <IconSkill />
                         Bootstrap, Materialize
                     </li>
                     <li className='extraSkill'>
                         <IconSkill />
-                        Stylus, Sass, Less
-                    </li>
-                    <li className='extraSkill'>
-                        <IconSkill />
-                        Gulp, Webpack, Grunt
-                    </li>
-                    <li className='extraSkill'>
-                        <IconSkill />
-                        GIT Knowledge
+                        BEM
                     </li>
                 </ul>
             </div>

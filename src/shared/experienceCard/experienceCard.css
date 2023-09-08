@@ -13,6 +13,7 @@
     margin-bottom: 0;
 }
 .addInfo {
+    width: 40%;
 }
 .descriptionInfo {
     max-width: 520px;
@@ -20,7 +21,6 @@
 .grade {
     display: inline-block;
     color: var(--color-black);
-    text-transform: capitalize;
     margin-right: 20px;
 }
 .date {

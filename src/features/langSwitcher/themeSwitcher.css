@@ -1,0 +1,21 @@
+@import "../../styles/variables.css";
+
+.themeSwitcher {
+    position: fixed;
+    margin-top: 16px;
+    padding: 34px;
+}
+
+.themeSwitcher svg {
+    width: 40px;
+    height: 40px;
+}
+
+.themeSwitcher svg path {
+    fill: var(--color-dark-gray);
+    transition: all .3s;
+}
+
+.themeSwitcher svg:hover path {
+    fill: var(--color-orange);
+}

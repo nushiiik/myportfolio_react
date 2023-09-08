@@ -4,8 +4,11 @@ import { Element } from "react-scroll";
 import {Title} from "../../shared/title/title";
 import {Paragraph} from "../../shared/paragraph/paragraph";
 import {ExperienceCard} from "../../shared/experienceCard/experienceCard";
+import {useTheme} from "../../processes/contextTheme";
 
 export const Experience = ({name, data}) => {
+    const {theme} = useTheme();
+
     const mainInfo = data.history.map((experience, index) => <ExperienceCard data={experience} key={`experience_${index}`} />);
 
     return (
@@ -14,7 +17,7 @@ export const Experience = ({name, data}) => {
                 <Title title = {data.title}/>
                 <Paragraph text = {data.text} align="center"/>
             </div>
-            <div className="mainInfo">
+            <div className={`mainInfo mainInfo_${theme}`}>
                 {mainInfo}
             </div>
         </Element>

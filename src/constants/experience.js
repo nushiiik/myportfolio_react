@@ -3,23 +3,23 @@ export const EDUCATION = {
     text: "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum",
     history: [
         {
-            place: "University of Toronto",
+            place: "The Bauman Moscow State University",
             grade: "Student",
-            date: "Jan 2014 - Dec 2020",
-            name: "Master Degree from the University",
+            date: "Sep 2010 - Jul 2016",
+            name: "Engineer specialization",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
+        },
+        {
+            place: "The Russian Academy of National Economy and Public Administration",
+            grade: "Student",
+            date: "Sep 2016 - Jul 2018",
+            name: "Master Degree of Economic Sciences",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
         },
         {
             place: "Programming Course",
             grade: "Student",
-            date: "Sep 2018 - Dec 2019",
-            name: "Certificate of web training",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
-        },
-        {
-            place: "Web-developer Course",
-            grade: "Student",
-            date: "Jan 2020 - Dec 2020",
+            date: "Jul 2022 - Dec 2022",
             name: "Certificate of web training",
             description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet dapibus nibh ut faucibus nunc, egestas id amet porttitor. Pulvinar quisque sed amet, nulla nunc. Eleifend sodales posuere fusce tempus etiam et pellentesque. Molestie risus enim neque eget dui."
         }

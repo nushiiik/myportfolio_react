@@ -8,52 +8,52 @@ import imageSeven from './images/image_portfolio_7.png';
 import imageEight from './images/image_portfolio_8.png';
 import imageNine from './images/image_portfolio_9.png';
 
-export const CATEGORIES = ["All categories", "UI Design", "Web Templates", "Logo", "Branding"];
+export const CATEGORIES = ["All categories", "Layout Design", "Javascript", "React", "Vue"];
 
 export const PORTFOLIO = [
     {
         img: imageOne,
         link:"/another-page",
-        category: CATEGORIES[1]
+        category: CATEGORIES[3]
     },
     {
         img: imageTwo,
         link:"https://nushiiik.github.io/beats_project/",
-        category: CATEGORIES[4]
+        category: CATEGORIES[2]
     },
     {
         img: imageThree,
         link:"https://nushiiik.github.io/MinimoBootstrap/",
-        category: CATEGORIES[3]
+        category: CATEGORIES[1]
     },
     {
         img: imageFour,
-        link:"/",
-        category: CATEGORIES[2]
+        link:"https://github.com/nushiiik/social-network_react",
+        category: CATEGORIES[3]
     },
     {
         img: imageFive,
-        link:"/",
+        link:"https://nushiiik.github.io/todo_project/dist/",
         category: CATEGORIES[1]
     },
     {
         img: imageSix,
-        link:"/",
-        category: CATEGORIES[3]
-    },
-    {
-        img: imageSeven,
-        link:"/",
+        link:"https://github.com/nushiiik/Test-players",
         category: CATEGORIES[4]
     },
     {
-        img: imageEight,
-        link:"/",
+        img: imageSeven,
+        link:"https://nushiiik.github.io/quiz_project/",
         category: CATEGORIES[1]
     },
     {
-        img: imageNine,
-        link:"/",
+        img: imageEight,
+        link:"https://nushiiik.github.io/leasing_project/dist/",
         category: CATEGORIES[2]
+    },
+    {
+        img: imageNine,
+        link:"https://nushiiik.github.io/amoCRM_project/dist/",
+        category: CATEGORIES[1]
     }
 ]

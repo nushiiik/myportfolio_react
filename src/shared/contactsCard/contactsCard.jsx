@@ -1,7 +1,10 @@
 import React from "react";
 import './contactsCard.css';
+import {useTheme} from "../../processes/contextTheme";
 
 export const ContactsCard = ({data}) => {
+    const {theme} = useTheme();
+
     const renderContentCard = () => {
         return data.description.map((data) => (
             <div className="contentCard">
@@ -12,7 +15,7 @@ export const ContactsCard = ({data}) => {
     };
 
     return (
-        <div className="contactsCard">
+        <div className={`contactsCard contactsCard_${theme}`}>
             <div className="iconCard">
                 <img src={data.icon} alt={data.icon} />
             </div>

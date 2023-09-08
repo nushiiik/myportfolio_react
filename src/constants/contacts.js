@@ -7,15 +7,15 @@ export const LOCATION = {
     description: [
         {
             property: "Country:",
-            meaning: "Bangladesh"
+            meaning: "Russia"
         },
         {
             property: "City:",
-            meaning: "Dhaka"
+            meaning: "Moscow"
         },
         {
             property: "Street:",
-            meaning: "35 Vhatara, Badda"
+            meaning: "B. Ochakovskaya, 10/2"
         }
     ]
 };
@@ -25,15 +25,15 @@ export const EMAIL = {
     description: [
         {
             property: "Email:",
-            meaning: "youremail@gmail.com"
+            meaning: "nutik093@gmail.com"
         },
         {
             property: "Skype:",
-            meaning: "@yourusername"
+            meaning: "a.a.lebedeva@outlook.com"
         },
         {
             property: "Telegram:",
-            meaning: "@yourusername"
+            meaning: "@nushiiik"
         }
     ]
 };
@@ -43,15 +43,15 @@ export const MOBILE = {
     description: [
         {
             property: "Support services:",
-            meaning: "15369"
+            meaning: "911"
         },
         {
             property: "Office:",
-            meaning: "+58 (021)356 587 235"
+            meaning: "+7(915)490-41-23"
         },
         {
             property: "Personal:",
-            meaning: "+58 (021)356 587 235"
+            meaning: "+7(915)490-41-23"
         }
     ]
 };

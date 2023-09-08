@@ -5,8 +5,8 @@ export const LANGUAGES = {
             grade: "100%"
         },
         {
-            skill: "English",
-            grade: "80%"
+            skill: "English (B1-B2)",
+            grade: "75%"
         }
     ]
 };
@@ -23,10 +23,10 @@ export const SKILLS = {
         },
         {
             skill: "JS",
-            grade: "80%"
+            grade: "85%"
         },
         {
-            skill: "React JS",
+            skill: "React",
             grade: "70%"
         }
     ]

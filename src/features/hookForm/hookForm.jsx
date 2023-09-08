@@ -12,13 +12,13 @@ export const HookForm = () => {
         <form className='hookForm' onSubmit={handleSubmit(onSubmit)}>
             <label>Your full name</label>
             <input
-                {...register("name", { required: true, pattern: /^[a-zA-Z]{2,}$/ })}
+                {...register("name", { required: true, pattern: /^[A-Za-zА-Яа-я]{2,}$/ })}
                 className={errors.name ? "errorInput" : ""}
             />
             <label>Your e-mail</label>
             <input
                 {...register("email", { required: true, pattern: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-z0-9-.]+$/ })}
-                className={errors.name ? "errorInput" : ""}
+                className={errors.email ? "errorInput" : ""}
             />
             <label>Subject</label>
             <input

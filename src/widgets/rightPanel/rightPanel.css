@@ -3,5 +3,12 @@
 .rightPanel {
     width: 108px;
     min-height: 100vh;
-    background-color: #FAFAFA;
+}
+
+.rightPanel_light {
+    background-color: var(--color-white);
+}
+
+.rightPanel_dark {
+    background-color: var(--color-gray-theme);
 }

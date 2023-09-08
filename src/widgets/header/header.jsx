@@ -3,11 +3,14 @@ import './header.css';
 import { Element } from "react-scroll";
 import PhotoPicture from "./images/photopicture.png";
 import {ButtonHire} from "../../features/buttonHire/buttonHire";
+import {useTheme} from "../../processes/contextTheme";
 
 
 export const Header = () => {
+    const {theme} = useTheme();
+
     return (
-        <Element name='home' className='header'>
+        <Element name='home' className={`header header_${theme}`}>
             <h1>I’m Anna Lebedeva <span>Front-end</span> Developer</h1>
             <div className='about'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque
                 rutrum semper sed suspendisse nunc lectus.</div>
